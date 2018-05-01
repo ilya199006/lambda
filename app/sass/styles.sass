@@ -1,0 +1,73 @@
+@import fonts
+
+a 
+	text-decoration: none
+ul
+	list-style-type: none
+
+[class*='-inner']
+	max-width: 1200px
+	margin: 0 auto
+
+/*header*/
+.page-header
+	width: 100%
+	position: fixed
+	top: 0
+	background-color: #000
+	opacity: .8
+
+	.logo
+		font-family: 'YesevaOneRegular'
+		font-size: 36px
+		text-transform: uppercase
+		color: silver
+
+	nav.main-nav
+		display: inline-block
+		font-family: 'LatoBold'
+		font-size: 18px
+
+		ul
+			li
+				display: inline-block
+
+				a
+					color: #fff
+
+	ul.header-soc-networks
+		display: inline-block
+		li
+			display: inline-block
+			a 
+				color: #dab33e
+
+.home
+
+	h1
+		text-align: center
+		font-family: 'YesevaOne'
+		font-size: 90px
+
+		&:after
+			content: ''
+			margin: 0 auto
+			display: block
+			width: 20px
+			height: 20px
+			border: 1px solid #000
+
+	&-buttons
+		width: 50%
+		margin: 0 auto
+		text-align: center
+
+		.btn
+			font-family: 'LatoRegular'
+			font-size: 18px
+			text-transform: uppercase
+			display: inline-block
+			background-color: #000
+			color: #fff
+			opacity: .8
+			padding: 10px 20px

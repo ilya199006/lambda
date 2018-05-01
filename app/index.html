@@ -3,36 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lambda</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header class="page-header">
-		<div class="header-inner">
-			<span class="logo">lambda</span>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Ingredients</a></li>
-					<li><a href="#">Menu</a></li>
-					<li><a href="#">Reviews</a></li>
-					<li><a href="#">Reservations</a></li>
-				</ul>
-			</nav>
-
-			<ul class="header-soc-networks">
-				<li><a href="#">twitter</a></li>
-				<li><a href="#">youtube</a></li>
-				<li><a href="#">facebook</a></li>
+	<header class="page-header">		
+		<span class="logo">lambda</span>
+		<nav class="main-nav">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#ingredients">Ingredients</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#reviews">Reviews</a></li>
+				<li><a href="#reservations">Reservations</a></li>
 			</ul>
-
-			<h1>the right ingredients for the right food</h1>
-			<a href="#" class="btn">book a table</a>
-			<a href="#" class="btn">see the menu</a>
-		</div>
+		</nav>
+	
+		<ul class="header-soc-networks">
+			<li><a href="#">twitter</a></li>
+			<li><a href="#">youtube</a></li>
+			<li><a href="#">facebook</a></li>
+		</ul>	
 	</header>
 
-	<section class="about">
+	<section class="home" id="home">
+		<div class="home-inner">
+			<h1>the right ingredients for the right food</h1>
+			<div class="home-buttons">
+				<a href="#" class="btn">book a table</a>
+				<a href="#" class="btn">see the menu</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="about" id="about">
 		<div class="about-inner">
 			<h3 class="about-title">Just the right food</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia libero, quae magnam optio cupiditate, deleniti ea distinctio! Eveniet consectetur, perspiciatis? Reprehenderit libero unde quas atque, voluptatem, deserunt earum quis.</p>
@@ -41,7 +46,7 @@
 		</div>
 	</section>
 
-	<section class="ingredients">
+	<section class="ingredients" id="ingredients">
 		<div class="ingredients-inner">
 			<h3 class="ingredients-title">Fine ingredients</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel necessitatibus nisi, autem hic similique minus tempore, magnam distinctio. Sint enim nemo asperiores placeat expedita deleniti. Sint, rerum, minima. Suscipit, nihil.</p>
@@ -51,7 +56,7 @@
 		</div>
 	</section>
 
-	<section class="menu">
+	<section class="menu" id="menu">
 		<div class="menu-inner">
 			<div class="menu-item">
 				<h3 class="menu-item-title">Appetisers</h3>
@@ -136,14 +141,14 @@
 		</div>
 	</section>
 
-	<section class="reviews">
+	<section class="reviews" id="reviews">
 		<div class="reviews-inner">
 			<h3 class="reviews-title">Guest Reviews</h3>
 			<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quidem aperiam, vitae quae fugit nulla eligendi mollitia officiis praesentium. Vel voluptate est, voluptatum eum ratione sequi nemo. Id, illo, iste?</blockquote>
 		</div>
 	</section>
 
-	<section class="reservations">
+	<section class="reservations" id="reservations">
 		<div class="reservations-inner">
 			<img src="" alt="dish#1">
 			<img src="" alt="dish#2">
