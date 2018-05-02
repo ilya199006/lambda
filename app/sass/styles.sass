@@ -7,30 +7,41 @@ ul
 
 [class*='-inner']
 	max-width: 1200px
+	padding-left: 131px
+	padding-right: 131px
 	margin: 0 auto
+
+[class*='-left'], [class*='-right']
+	width: 48%
+	display: inline-block
+	box-sizing: border-box
 
 /*header*/
 .page-header
 	width: 100%
 	position: fixed
 	top: 0
+	padding-left: 131px
+	padding-right: 131px
 	background-color: #000
-	opacity: .8
+	opacity: .7
 
 	.logo
 		font-family: 'YesevaOneRegular'
-		font-size: 36px
+		font-size: 27px
 		text-transform: uppercase
 		color: silver
 
 	nav.main-nav
 		display: inline-block
+		margin-left: 150px
 		font-family: 'LatoBold'
-		font-size: 18px
+		font-size: 15px
 
 		ul
 			li
 				display: inline-block
+				margin-left: 15px
 
 				a
 					color: #fff
@@ -39,23 +50,48 @@ ul
 		display: inline-block
 		li
 			display: inline-block
+			vertical-align: middle
 			a 
-				color: #dab33e
+				display: inline-block
+				width: 21px
+				height: 21px
+				background-image: url('../img/index_header_social.png')
+				background-size: cover
+
+			&:nth-of-type(1)
+				margin-right: 15px
+				a
+					background-position: 0px
+			&:nth-of-type(2)
+				margin-right: 15px
+				a
+					background-position: -35px
+			&:nth-of-type(3)
+				a
+					background-position: -60px
 
 .home
-
+	padding-top: 195px
+	padding-bottom: 106px
+	background-image: url('../img/index_home_bg.jpg')
+	background-size: cover
+	background-position: center
 	h1
+		padding-left: 200px
+		padding-right: 200px
+		color: #fff
 		text-align: center
 		font-family: 'YesevaOne'
-		font-size: 90px
+		font-size: 68px
 
 		&:after
 			content: ''
-			margin: 0 auto
+			margin: 42px auto
 			display: block
-			width: 20px
-			height: 20px
-			border: 1px solid #000
+			background: url('../img/index_divider.png')
+
+			width: 232px
+			height: 43px
 
 	&-buttons
 		width: 50%
@@ -64,10 +100,43 @@ ul
 
 		.btn
 			font-family: 'LatoRegular'
-			font-size: 18px
+			font-size: 13px
 			text-transform: uppercase
 			display: inline-block
 			background-color: #000
 			color: #fff
 			opacity: .8
-			padding: 10px 20px
+			padding: 18px 42px 
+
+			&:nth-of-type(2)
+				margin-left: 21px
+
+.about
+	padding-top: 100px
+	padding-bottom: 106px
+	background-image: url('../img/index_about_bg_pattern.png')
+	background-size: cover
+	background-position: center
+
+	&-left
+		vertical-align: top
+
+	&-title
+		margin-left: 120px
+		color: #cc9900
+		font-family: 'YesevaOne'
+		font-size: 27px
+		&:after
+			content: ''
+			display: block
+			background: url('../img/index_divider.png')
+			background-color: #cc9900
+			width: 232px
+			height: 43px
+
+	&-content
+		font-family: 'LatoRegular'
+		font-size: 12px
+		text-align: center
+		padding-left: 80px
+		padding-right: 80px
