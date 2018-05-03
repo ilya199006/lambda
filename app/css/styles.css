@@ -157,6 +157,9 @@ a {
 ul {
   list-style-type: none; }
 
+h2, h3, h4 {
+  font-weight: normal; }
+
 [class*='-inner'] {
   max-width: 1200px;
   padding-left: 131px;
@@ -176,7 +179,8 @@ ul {
   padding-left: 131px;
   padding-right: 131px;
   background-color: #000;
-  opacity: .7; }
+  opacity: .7;
+  z-index: 2; }
   .page-header .logo {
     font-family: 'YesevaOneRegular';
     font-size: 27px;
@@ -219,7 +223,8 @@ ul {
   padding-bottom: 106px;
   background-image: url("../img/index_home_bg.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
   .home h1 {
     padding-left: 200px;
     padding-right: 200px;
@@ -231,7 +236,7 @@ ul {
       content: '';
       margin: 42px auto;
       display: block;
-      background: url("../img/index_divider.png");
+      background: url("../img/index_home_divider.png");
       width: 232px;
       height: 43px; }
   .home-buttons {
@@ -251,28 +256,125 @@ ul {
         margin-left: 21px; }
 
 .about {
-  padding-top: 100px;
-  padding-bottom: 106px;
-  background-image: url("../img/index_about_bg_pattern.png");
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-image: url("../img/index_about_bg_pattern.png"), url("../img/index_about_bg.png");
   background-size: cover;
   background-position: center; }
   .about-left {
     vertical-align: top; }
   .about-title {
-    margin-left: 120px;
     color: #cc9900;
     font-family: 'YesevaOne';
-    font-size: 27px; }
+    font-size: 27px;
+    text-align: center; }
     .about-title:after {
       content: '';
       display: block;
-      background: url("../img/index_divider.png");
-      background-color: #cc9900;
-      width: 232px;
-      height: 43px; }
+      margin: 18px auto;
+      background: url("../img/index_about_divider.png");
+      background-size: cover;
+      background-position: center;
+      width: 183px;
+      height: 21px; }
   .about-content {
     font-family: 'LatoRegular';
     font-size: 12px;
     text-align: center;
     padding-left: 80px;
-    padding-right: 80px; }
+    padding-right: 80px;
+    margin-top: 40px; }
+  .about-signature {
+    margin: 39px 175px;
+    width: 219px;
+    height: 221px;
+    background-image: url("../img/index_about_cook.png");
+    background-size: cover; }
+  .about-img {
+    display: block;
+    margin-left: 10px;
+    width: 435px;
+    height: 435px; }
+
+.ingredients {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-image: url("../img/index_ingredients_bg.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .ingredients-right {
+    color: #fff;
+    background-color: #000;
+    opacity: .6;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    padding-left: 60px;
+    padding-right: 60px; }
+  .ingredients-title {
+    font-family: 'YesevaOneRegular';
+    font-size: 27px; }
+    .ingredients-title:after {
+      content: '';
+      margin: 18px auto;
+      display: block;
+      background: url("../img/index_ingredients_divider.png");
+      background-size: cover;
+      background-position: center;
+      width: 189px;
+      height: 21px; }
+  .ingredients-content {
+    font-family: 'LatoRegular';
+    font-size: 16px; }
+  .ingredients-item {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    margin-top: 54px;
+    background-size: cover; }
+    .ingredients-item:nth-of-type(1) {
+      background-image: url("../img/index_ingredients_1.png"); }
+    .ingredients-item:nth-of-type(2) {
+      background-image: url("../img/index_ingredients_2.png");
+      margin-left: 24px; }
+    .ingredients-item:nth-of-type(3) {
+      background-image: url("../img/index_ingredients_3.png");
+      margin-left: 24px; }
+
+.menu {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 82px;
+  padding-right: 82px;
+  background-image: url("../img/index_menu_bg_pattern.png"), url("../img/index_menu_bg.png");
+  background-size: cover;
+  background-position: center; }
+  .menu-item {
+    margin-bottom: 60px; }
+    .menu-item-title {
+      color: #cc9900;
+      text-align: center;
+      font-family: 'YesevaOneRegular';
+      font-size: 27px; }
+      .menu-item-title:after {
+        content: '';
+        display: block;
+        margin: 18px auto;
+        background: url("../img/index_about_divider.png");
+        background-size: cover;
+        background-position: center;
+        width: 183px;
+        height: 21px; }
+    .menu-item .dish-name {
+      font-family: 'YesevaOneRegular';
+      font-size: 16px;
+      color: #cc9900;
+      border-bottom: 1px solid #cc9900;
+      text-align: left; }
+    .menu-item .dish-price {
+      float: right; }
+    .menu-item .dish-description {
+      font-family: 'LatoRegular';
+      font-size: 14px; }
