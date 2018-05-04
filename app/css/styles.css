@@ -265,7 +265,7 @@ h2, h3, h4 {
     vertical-align: top; }
   .about-title {
     color: #cc9900;
-    font-family: 'YesevaOne';
+    font-family: 'YesevaOneRegular';
     font-size: 27px;
     text-align: center; }
     .about-title:after {
@@ -304,6 +304,7 @@ h2, h3, h4 {
   background-image: url("../img/index_ingredients_bg.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   text-align: center; }
   .ingredients-right {
     color: #fff;
@@ -378,3 +379,170 @@ h2, h3, h4 {
     .menu-item .dish-description {
       font-family: 'LatoRegular';
       font-size: 14px; }
+
+.reviews {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-left: 180px;
+  padding-right: 180px;
+  background-image: url("../img/index_reviews_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center; }
+  .reviews-box {
+    color: #fff;
+    background-color: #000;
+    opacity: .7;
+    padding-top: 66px;
+    padding-bottom: 75px;
+    padding-left: 60px;
+    padding-right: 60px; }
+  .reviews-title {
+    font-family: 'YesevaOneRegular';
+    font-size: 27px; }
+    .reviews-title:after {
+      content: '';
+      margin: 18px auto;
+      display: block;
+      background: url("../img/index_ingredients_divider.png");
+      background-size: cover;
+      background-position: center;
+      width: 189px;
+      height: 21px; }
+  .reviews-quote {
+    font-family: 'LatoRegular';
+    font-size: 16px;
+    line-height: 2;
+    margin: 0 0; }
+  .reviews-cite {
+    font-family: 'LatoItalic';
+    font-size: 18px;
+    display: block;
+    margin-top: 20px; }
+    .reviews-cite a {
+      color: #fff; }
+
+.reservations {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-image: url("../img/index_about_bg_pattern.png"), url("../img/index_about_bg.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  .reservations-img {
+    display: inline-block;
+    width: 214px;
+    margin-right: 24px; }
+  .reservations-right {
+    padding-left: 54px;
+    padding-right: 54px;
+    vertical-align: top; }
+  .reservations-title {
+    color: #cc9900;
+    font-family: 'YesevaOneRegular';
+    font-size: 27px;
+    margin-top: 0px; }
+    .reservations-title:after {
+      content: '';
+      display: block;
+      margin: 18px auto;
+      background: url("../img/index_about_divider.png");
+      background-size: cover;
+      background-position: center;
+      width: 183px;
+      height: 21px; }
+  .reservations-content {
+    font-family: 'LatoRegular';
+    font-size: 14px; }
+  .reservations-form {
+    margin-top: 36px; }
+    .reservations-form label {
+      font-family: 'OpenSansBold';
+      font-size: 14px;
+      text-align: left;
+      margin-bottom: 24px;
+      display: inline-block;
+      color: #cc9900; }
+      .reservations-form label:nth-of-type(2n) {
+        margin-left: 24px; }
+      .reservations-form label:nth-of-type(1) input {
+        placeholder: 'Name'; }
+      .reservations-form label input {
+        display: block;
+        width: 150px;
+        height: 22px;
+        border: 1px solid transparent;
+        font-family: 'LatoRegular';
+        font-size: 14px; }
+    .reservations-form button {
+      color: #fff;
+      font-family: 'OpenSansRegular';
+      font-size: 16px;
+      display: inline-block;
+      background-color: #cc9900;
+      width: 150px;
+      height: 30px;
+      border: 1px solid transparent; }
+
+.page-footer {
+  color: #fff;
+  background-color: #000;
+  text-align: center; }
+  .page-footer .footer-item {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    margin-top: 40px;
+    margin-bottom: 60px; }
+    .page-footer .footer-item-title {
+      font-family: 'YesevaOneRegular';
+      font-size: 15px; }
+      .page-footer .footer-item-title:after {
+        content: '';
+        margin: 18px auto;
+        display: block;
+        background: url("../img/index_ingredients_divider.png");
+        background-size: contain;
+        background-position: center;
+        width: 150px;
+        height: 15px; }
+    .page-footer .footer-item p {
+      font-family: 'LatoRegular';
+      font-size: 14px; }
+      .page-footer .footer-item p span {
+        font-family: 'LatoBold'; }
+  .page-footer .footer-paycards {
+    margin-top: 39px;
+    padding-left: 0px; }
+    .page-footer .footer-paycards-item {
+      display: inline-block;
+      width: 30px;
+      height: 15px;
+      background-image: url("../img/index_footer_cards.png");
+      background-size: cover; }
+      .page-footer .footer-paycards-item:nth-of-type(2) {
+        background-position: -30px; }
+      .page-footer .footer-paycards-item:nth-of-type(3) {
+        background-position: -60px; }
+      .page-footer .footer-paycards-item:nth-of-type(4) {
+        background-position: -90px; }
+  .page-footer .footer-soc-networks {
+    margin-top: 39px;
+    padding-left: 0px; }
+    .page-footer .footer-soc-networks-item {
+      display: inline-block; }
+      .page-footer .footer-soc-networks-item a {
+        display: block;
+        width: 20px;
+        height: 17px;
+        background-image: url("../img/index_footer_icons.png");
+        background-size: cover; }
+      .page-footer .footer-soc-networks-item:nth-of-type(1) a {
+        background-position: 0px; }
+      .page-footer .footer-soc-networks-item:nth-of-type(2) a {
+        background-position: -20px; }
+      .page-footer .footer-soc-networks-item:nth-of-type(3) a {
+        background-position: -45px; }
+      .page-footer .footer-soc-networks-item:nth-of-type(4) a {
+        background-position: -69px; }
