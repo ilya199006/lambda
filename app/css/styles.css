@@ -195,7 +195,11 @@ h2, h3, h4 {
       display: inline-block;
       margin-left: 15px; }
       .page-header nav.main-nav ul li a {
-        color: #fff; }
+        color: #fff;
+        border-top: 2px solid transparent;
+        padding-top: 15px; }
+        .page-header nav.main-nav ul li a:hover {
+          border-top: 2px solid #fff; }
   .page-header ul.header-soc-networks {
     display: inline-block; }
     .page-header ul.header-soc-networks li {
@@ -251,9 +255,15 @@ h2, h3, h4 {
       background-color: #000;
       color: #fff;
       opacity: .8;
-      padding: 18px 42px; }
+      padding: 18px 42px;
+      -webkit-transition: color, background-color 0.2s ease;
+      -o-transition: color, background-color 0.2s ease;
+      transition: color, background-color 0.2s ease; }
       .home-buttons .btn:nth-of-type(2) {
         margin-left: 21px; }
+      .home-buttons .btn:hover {
+        color: #000;
+        background-color: #fff; }
 
 .about {
   padding-top: 75px;
@@ -334,7 +344,18 @@ h2, h3, h4 {
     width: 84px;
     height: 84px;
     margin-top: 54px;
-    background-size: cover; }
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 84px;
+    filter: saturate(0);
+    border: 2px solid transparent;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+    .ingredients-item:hover {
+      filter: saturate(100%);
+      border: 2px solid red;
+      opacity: 1; }
     .ingredients-item:nth-of-type(1) {
       background-image: url("../img/index_ingredients_1.png"); }
     .ingredients-item:nth-of-type(2) {
@@ -466,14 +487,13 @@ h2, h3, h4 {
       color: #cc9900; }
       .reservations-form label:nth-of-type(2n) {
         margin-left: 24px; }
-      .reservations-form label:nth-of-type(1) input {
-        placeholder: 'Name'; }
       .reservations-form label input {
         display: block;
+        overflow: visible;
         width: 150px;
         height: 22px;
         border: 1px solid transparent;
-        font-family: 'LatoRegular';
+        font-family: 'LatoItalic';
         font-size: 14px; }
     .reservations-form button {
       color: #fff;
@@ -483,7 +503,13 @@ h2, h3, h4 {
       background-color: #cc9900;
       width: 150px;
       height: 30px;
-      border: 1px solid transparent; }
+      border: 1px solid transparent;
+      -webkit-transition: color, background-color 0.2s ease;
+      -o-transition: color, background-color 0.2s ease;
+      transition: color, background-color 0.2s ease; }
+      .reservations-form button:hover {
+        color: #cc9900;
+        background-color: #000; }
 
 .page-footer {
   color: #fff;

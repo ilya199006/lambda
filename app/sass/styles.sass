@@ -49,6 +49,11 @@ h2, h3, h4
 
 				a
 					color: #fff
+					border-top: 2px solid transparent
+					padding-top: 15px
+
+					&:hover
+						border-top: 2px solid #fff
 
 	ul.header-soc-networks
 		display: inline-block
@@ -112,9 +117,16 @@ h2, h3, h4
 			color: #fff
 			opacity: .8
 			padding: 18px 42px 
+			-webkit-transition: color, background-color 0.2s ease;
+			-o-transition: color, background-color 0.2s ease;
+			transition: color, background-color 0.2s ease;
 
 			&:nth-of-type(2)
 				margin-left: 21px
+
+			&:hover
+				color: #000
+				background-color: #fff
 
 .about
 	padding-top: 75px
@@ -206,6 +218,19 @@ h2, h3, h4
 		height: 84px
 		margin-top: 54px
 		background-size: cover
+		box-sizing: border-box
+		border-radius: 84px
+		filter: saturate(0)
+		border: 2px solid transparent
+		-webkit-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+
+		&:hover
+			filter: saturate(100%)
+			border: 2px solid red
+			opacity: 1
+
 
 		&:nth-of-type(1)
 			background-image: url('../img/index_ingredients_1.png')
@@ -363,17 +388,13 @@ h2, h3, h4
 			&:nth-of-type(2n)
 				margin-left: 24px
 
-			&:nth-of-type(1)
-
-				input
-					placeholder: 'Name'
-						
 			input
 				display: block
+				overflow: visible
 				width: 150px
 				height: 22px
 				border: 1px solid transparent
-				font-family: 'LatoRegular'
+				font-family: 'LatoItalic'
 				font-size: 14px
 
 		button
@@ -385,6 +406,13 @@ h2, h3, h4
 			width: 150px
 			height: 30px
 			border: 1px solid transparent
+			-webkit-transition: color, background-color 0.2s ease;
+			-o-transition: color, background-color 0.2s ease;
+			transition: color, background-color 0.2s ease;
+
+			&:hover
+				color: #cc9900
+				background-color: #000
 
 .page-footer
 	color: #fff
